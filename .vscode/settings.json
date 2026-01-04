@@ -4,5 +4,9 @@
 	"[markdown]": {
 		// biome doesn't support markdown formatting yet
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[astro]": {
+		// astro-vscode is the official formatter for astro
+		"editor.defaultFormatter": "astro-build.astro-vscode"
 	}
 }
