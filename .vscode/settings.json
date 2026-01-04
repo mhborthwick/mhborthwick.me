@@ -1,0 +1,8 @@
+{
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "biomejs.biome",
+	"[markdown]": {
+		// biome doesn't support markdown formatting yet
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
+}
