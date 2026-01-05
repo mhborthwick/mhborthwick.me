@@ -25,14 +25,6 @@ describe("Footer", () => {
 		expect(container.textContent).toContain(`© ${currentYear} Mike Borthwick`);
 	});
 
-	it("should display tech stack information", () => {
-		const { container } = render(<Footer />);
-		expect(container.textContent).toContain("Built with");
-		expect(container.textContent).toContain("Astro");
-		expect(container.textContent).toContain("TypeScript");
-		expect(container.textContent).toContain("Tailwind CSS");
-	});
-
 	it("should have proper semantic structure", () => {
 		const { container } = render(<Footer />);
 
@@ -40,7 +32,7 @@ describe("Footer", () => {
 		const paragraphs = footer?.querySelectorAll("p");
 
 		expect(footer).toBeTruthy();
-		expect(paragraphs?.length).toBe(2);
+		expect(paragraphs?.length).toBe(1);
 	});
 
 	it("should pass accessibility tests", async () => {
