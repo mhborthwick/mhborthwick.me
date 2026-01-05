@@ -10,120 +10,13 @@
  */
 
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.tsx";
+import About from "../components/About.tsx";
 ---
 
 <BaseLayout title="Mike Borthwick - Home" description="Personal website of Mike Borthwick">
-	<main id="main-content" class="main-content">
-		<div class="container">
-			<h1 class="heading">Mike Borthwick</h1>
-			<p class="email">
-				<a href="mailto:hello@example.com" class="email-link">hello@example.com</a>
-			</p>
-
-			<nav class="links-nav" aria-label="Connect with me">
-				<ul class="links-list">
-					<li>
-						<a href="#resume" class="link" target="_blank" rel="noopener noreferrer">
-							View Resume ↗
-						</a>
-					</li>
-					<li>
-						<a href="#linkedin" class="link" target="_blank" rel="noopener noreferrer">
-							LinkedIn Profile ↗
-						</a>
-					</li>
-					<li>
-						<a href="#github" class="link" target="_blank" rel="noopener noreferrer">
-							GitHub Projects ↗
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+	<main id="main-content" class="flex flex-col min-h-[calc(100vh-300px)]">
+		<Header />
+		<About />
 	</main>
 </BaseLayout>
-
-<style>
-	.main-content {
-		min-height: calc(100vh - 300px);
-		display: flex;
-		justify-content: center;
-		padding: 0 1rem;
-	}
-
-	.container {
-		max-width: 37.5rem;
-		width: 100%;
-		padding: 0 1rem;
-		margin: 3rem auto;
-	}
-
-	.heading {
-		font-size: 2.5rem;
-		font-weight: 700;
-		color: #1f2937;
-		margin: 0 0 0.5rem 0;
-		line-height: 1.2;
-	}
-
-	.email {
-		margin: 0 0 2rem 0;
-	}
-
-	.email-link {
-		color: #1f2937;
-		text-decoration: none;
-		font-weight: 400;
-		transition: color 0.2s ease-in-out;
-	}
-
-	.email-link:hover {
-		color: #3b82f6;
-	}
-
-	.email-link:focus {
-		outline: 2px solid #3b82f6;
-		outline-offset: 2px;
-		border-radius: 2px;
-	}
-
-	.links-nav {
-		margin-top: 2rem;
-	}
-
-	.links-list {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		display: flex;
-		flex-direction: column;
-		gap: 0.25rem;
-	}
-
-	.link {
-		display: flex;
-		align-items: center;
-		padding: 0.5rem 0;
-		color: #1f2937;
-		text-decoration: none;
-		font-weight: 500;
-		transition: all 0.2s ease-in-out;
-		min-height: 44px;
-	}
-
-	.link:hover {
-		color: #3b82f6;
-	}
-
-	.link:focus {
-		outline: 2px solid #3b82f6;
-		outline-offset: 2px;
-	}
-
-	/* Mobile responsive */
-	@media (max-width: 640px) {
-		.heading {
-			font-size: 2rem;
-		}
-	}
-</style>
