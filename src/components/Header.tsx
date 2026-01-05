@@ -35,7 +35,7 @@ export default function Header() {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								View Resume ↗
+								Resume ↗
 							</a>
 						</li>
 						<li>
@@ -45,7 +45,7 @@ export default function Header() {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								LinkedIn Profile ↗
+								LinkedIn ↗
 							</a>
 						</li>
 						<li>
@@ -55,7 +55,7 @@ export default function Header() {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								GitHub Projects ↗
+								GitHub ↗
 							</a>
 						</li>
 					</ul>

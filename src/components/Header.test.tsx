@@ -55,17 +55,17 @@ describe("Header", () => {
 		expect(resumeLink).toBeTruthy();
 		expect(resumeLink?.getAttribute("target")).toBe("_blank");
 		expect(resumeLink?.getAttribute("rel")).toBe("noopener noreferrer");
-		expect(resumeLink?.textContent).toContain("View Resume");
+		expect(resumeLink?.textContent).toContain("Resume");
 
 		expect(linkedinLink).toBeTruthy();
 		expect(linkedinLink?.getAttribute("target")).toBe("_blank");
 		expect(linkedinLink?.getAttribute("rel")).toBe("noopener noreferrer");
-		expect(linkedinLink?.textContent).toContain("LinkedIn Profile");
+		expect(linkedinLink?.textContent).toContain("LinkedIn");
 
 		expect(githubLink).toBeTruthy();
 		expect(githubLink?.getAttribute("target")).toBe("_blank");
 		expect(githubLink?.getAttribute("rel")).toBe("noopener noreferrer");
-		expect(githubLink?.textContent).toContain("GitHub Projects");
+		expect(githubLink?.textContent).toContain("GitHub");
 	});
 
 	it("should have proper semantic structure", () => {
