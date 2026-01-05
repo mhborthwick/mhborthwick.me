@@ -16,25 +16,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 	<main id="main-content" class="main-content">
 		<div class="container">
 			<h1 class="heading">Mike Borthwick</h1>
-			<p class="intro">
-				Welcome to my personal site.
-			</p>
 
 			<nav class="links-nav" aria-label="Connect with me">
 				<ul class="links-list">
 					<li>
-						<a href="#resume" class="link">
-							View Resume
+						<a href="#resume" class="link" target="_blank" rel="noopener noreferrer">
+							View Resume ↗
 						</a>
 					</li>
 					<li>
-						<a href="#linkedin" class="link">
-							LinkedIn Profile
+						<a href="#linkedin" class="link" target="_blank" rel="noopener noreferrer">
+							LinkedIn Profile ↗
 						</a>
 					</li>
 					<li>
-						<a href="#github" class="link">
-							GitHub Projects
+						<a href="#github" class="link" target="_blank" rel="noopener noreferrer">
+							GitHub Projects ↗
 						</a>
 					</li>
 					<li>
@@ -58,9 +55,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 	}
 
 	.container {
-		max-width: 600px;
+		max-width: 37.5rem;
 		width: 100%;
-		text-align: center;
+		padding: 0 1rem;
+		margin: 3rem auto;
 	}
 
 	.heading {
@@ -69,13 +67,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 		color: #1f2937;
 		margin: 0 0 1rem 0;
 		line-height: 1.2;
-	}
-
-	.intro {
-		font-size: 1.125rem;
-		color: #6b7280;
-		margin: 0 0 2rem 0;
-		line-height: 1.6;
 	}
 
 	.links-nav {
@@ -93,24 +84,18 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 	.link {
 		display: block;
-		padding: 1rem 1.5rem;
-		background-color: #f3f4f6;
+		padding: 1rem 0;
 		color: #1f2937;
 		text-decoration: none;
 		font-weight: 500;
-		border-radius: 0.5rem;
 		transition: all 0.2s ease-in-out;
 		min-height: 44px;
-		min-width: 44px;
 		display: flex;
 		align-items: center;
-		justify-content: center;
 	}
 
 	.link:hover {
-		background-color: #e5e7eb;
-		transform: translateY(-2px);
-		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+		color: #3b82f6;
 	}
 
 	.link:focus {
@@ -122,19 +107,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 	@media (max-width: 640px) {
 		.heading {
 			font-size: 2rem;
-		}
-
-		.intro {
-			font-size: 1rem;
-		}
-	}
-
-	/* Tablet and up - can display links in grid */
-	@media (min-width: 768px) {
-		.links-list {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			gap: 1rem;
 		}
 	}
 </style>

@@ -46,8 +46,8 @@ function isCurrentPage(href: string, currentPath: string): boolean {
 
 export default function Nav({ currentPath }: NavProps) {
 	return (
-		<nav aria-label="Main navigation" className="p-4 border-b border-gray-200">
-			<ul className="flex flex-col gap-2 list-none m-0 p-0 max-w-screen-xl mx-auto sm:flex-row sm:flex-wrap sm:gap-6">
+		<nav aria-label="Main navigation" className="border-b border-gray-200">
+			<ul className="flex flex-col gap-2 list-none p-0 max-w-[37.5rem] px-4 my-12 mx-auto sm:flex-row sm:flex-wrap sm:gap-6">
 				{navLinks.map((link) => (
 					<li key={link.href} className="m-0">
 						<a

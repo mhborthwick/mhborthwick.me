@@ -15,8 +15,8 @@ export default function Footer() {
 	const techStack = ["Astro", "TypeScript", "Tailwind CSS"];
 
 	return (
-		<footer className="mt-auto py-8 px-4 sm:py-6 border-t border-gray-200 bg-gray-50">
-			<div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center md:justify-between gap-2 md:gap-3 text-center md:text-left">
+		<footer className="mt-auto border-t border-gray-200 bg-gray-50">
+			<div className="max-w-[37.5rem] px-4 my-12 mx-auto flex flex-col md:flex-row items-center md:justify-between gap-2 md:gap-3 text-center md:text-left">
 				<p className="m-0 text-gray-700 text-sm leading-normal font-medium">
 					&copy; {currentYear} Mike Borthwick
 				</p>
