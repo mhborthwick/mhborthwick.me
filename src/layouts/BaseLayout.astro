@@ -12,8 +12,8 @@
  */
 
 import "../styles/global.css";
-import Nav from "../components/Nav.astro";
-import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.tsx";
+import Footer from "../components/Footer.tsx";
 
 interface Props {
 	/** Page title for SEO and browser tab */
@@ -37,7 +37,7 @@ const {
 		<title>{title}</title>
 		<!-- TODO: Add analytics script here -->
 	</head>
-	<body>
+	<body class="min-h-screen flex flex-col">
 		<!-- Skip link for keyboard navigation -->
 		<a
 			href="#main-content"
@@ -46,7 +46,7 @@ const {
 			Skip to main content
 		</a>
 
-		<Nav />
+		<Nav currentPath={Astro.url.pathname} />
 
 		<slot />
 
