@@ -16,6 +16,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 	<main id="main-content" class="main-content">
 		<div class="container">
 			<h1 class="heading">Mike Borthwick</h1>
+			<p class="email">
+				<a href="mailto:hello@example.com" class="email-link">hello@example.com</a>
+			</p>
 
 			<nav class="links-nav" aria-label="Connect with me">
 				<ul class="links-list">
@@ -32,11 +35,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 					<li>
 						<a href="#github" class="link" target="_blank" rel="noopener noreferrer">
 							GitHub Projects ↗
-						</a>
-					</li>
-					<li>
-						<a href="mailto:placeholder@example.com" class="link">
-							Send Email
 						</a>
 					</li>
 				</ul>
@@ -65,8 +63,29 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 		font-size: 2.5rem;
 		font-weight: 700;
 		color: #1f2937;
-		margin: 0 0 1rem 0;
+		margin: 0 0 0.5rem 0;
 		line-height: 1.2;
+	}
+
+	.email {
+		margin: 0 0 2rem 0;
+	}
+
+	.email-link {
+		color: #1f2937;
+		text-decoration: none;
+		font-weight: 400;
+		transition: color 0.2s ease-in-out;
+	}
+
+	.email-link:hover {
+		color: #3b82f6;
+	}
+
+	.email-link:focus {
+		outline: 2px solid #3b82f6;
+		outline-offset: 2px;
+		border-radius: 2px;
 	}
 
 	.links-nav {
