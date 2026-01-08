@@ -30,7 +30,7 @@ export default function Header() {
 					<ul className="list-none p-0 m-0 flex flex-col gap-0">
 						<li>
 							<a
-								href="#resume"
+								href="https://drive.proton.me/urls/5JBG6H02DG#7I8xieHXQkzS"
 								className="flex items-center py-0.5 text-sm text-gray-800 no-underline font-medium transition-all duration-200 min-h-[32px] hover:text-blue-500 focus:outline focus:outline-2 focus:outline-blue-500 focus:outline-offset-2"
 								target="_blank"
 								rel="noopener noreferrer"
@@ -40,7 +40,7 @@ export default function Header() {
 						</li>
 						<li>
 							<a
-								href="#linkedin"
+								href="https://www.linkedin.com/in/mhborthwick"
 								className="flex items-center py-0.5 text-sm text-gray-800 no-underline font-medium transition-all duration-200 min-h-[32px] hover:text-blue-500 focus:outline focus:outline-2 focus:outline-blue-500 focus:outline-offset-2"
 								target="_blank"
 								rel="noopener noreferrer"
@@ -50,7 +50,7 @@ export default function Header() {
 						</li>
 						<li>
 							<a
-								href="#github"
+								href="https://github.com/mhborthwick"
 								className="flex items-center py-0.5 text-sm text-gray-800 no-underline font-medium transition-all duration-200 min-h-[32px] hover:text-blue-500 focus:outline focus:outline-2 focus:outline-blue-500 focus:outline-offset-2"
 								target="_blank"
 								rel="noopener noreferrer"
