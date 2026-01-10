@@ -21,6 +21,8 @@ This is a personal website built with Astro, a modern static site generator. The
 - `pnpm preview` - Preview production build locally
 - `pnpm format` - Format code with Biome
 - `pnpm lint` - Lint and auto-fix with Biome
+- `pnpm check` - Run both linting and formatting with auto-fix
+- `pnpm ci` - Run Biome in CI mode (checks only, no writes)
 - `pnpm test` - Run tests with Vitest
 - `pnpm coverage` - Run tests and calculate coverage
 
@@ -28,9 +30,9 @@ This is a personal website built with Astro, a modern static site generator. The
 
 ### Pre-commit Checklist
 
-Before pushing code changes, always:
+Before finalizing code changes, always:
 
-1. Run `pnpm lint && pnpm format` to ensure code style compliance
+1. Run `pnpm check` to ensure code style compliance (linting, formatting, import order)
 2. Run `pnpm test` to verify all tests pass
 3. Check that no environment variables or secrets are committed
 

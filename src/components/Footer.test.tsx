@@ -3,8 +3,8 @@
  * Verifies semantic structure, accessibility, and content
  */
 
-import { describe, it, expect, afterEach } from "vitest";
-import { render, cleanup } from "@testing-library/react";
+import { cleanup, render } from "@testing-library/react";
+import { afterEach, describe, expect, it } from "vitest";
 import { axe } from "vitest-axe";
 import Footer from "./Footer";
 

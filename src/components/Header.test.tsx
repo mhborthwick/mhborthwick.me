@@ -3,8 +3,8 @@
  * Verifies semantic structure, accessibility, and content
  */
 
-import { describe, it, expect, afterEach } from "vitest";
-import { render, cleanup } from "@testing-library/react";
+import { cleanup, render } from "@testing-library/react";
+import { afterEach, describe, expect, it } from "vitest";
 import { axe } from "vitest-axe";
 import Header from "./Header";
 
@@ -48,9 +48,15 @@ describe("Header", () => {
 
 	it("should have navigation links with correct attributes", () => {
 		const { container } = render(<Header />);
-		const resumeLink = container.querySelector('a[href="#resume"]');
-		const linkedinLink = container.querySelector('a[href="#linkedin"]');
-		const githubLink = container.querySelector('a[href="#github"]');
+		const resumeLink = container.querySelector(
+			'a[href="https://drive.proton.me/urls/5JBG6H02DG#7I8xieHXQkzS"]',
+		);
+		const linkedinLink = container.querySelector(
+			'a[href="https://www.linkedin.com/in/mhborthwick"]',
+		);
+		const githubLink = container.querySelector(
+			'a[href="https://github.com/mhborthwick"]',
+		);
 
 		expect(resumeLink).toBeTruthy();
 		expect(resumeLink?.getAttribute("target")).toBe("_blank");

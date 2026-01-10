@@ -8,6 +8,8 @@
 		"preview": "astro preview",
 		"format": "biome format --write",
 		"lint": "biome lint --write",
+		"check": "biome check --write",
+		"ci": "biome ci",
 		"test": "vitest",
 		"coverage": "vitest run --coverage"
 	},
