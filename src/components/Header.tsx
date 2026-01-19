@@ -19,10 +19,10 @@ export default function Header() {
 
 				<p className="m-0 mb-6 text-sm">
 					<a
-						href="mailto:hello@example.com"
+						href="mailto:mhborthwick@proton.me"
 						className="text-gray-800 no-underline font-normal transition-colors duration-200 hover:text-blue-500 focus:outline focus:outline-2 focus:outline-blue-500 focus:outline-offset-2 focus:rounded-sm"
 					>
-						hello@example.com
+						mhborthwick@proton.me
 					</a>
 				</p>
 

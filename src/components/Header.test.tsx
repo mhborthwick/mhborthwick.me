@@ -28,10 +28,10 @@ describe("Header", () => {
 	it("should display email link with correct href", () => {
 		const { container } = render(<Header />);
 		const emailLink = container.querySelector(
-			'a[href="mailto:hello@example.com"]',
+			'a[href="mailto:mhborthwick@proton.me"]',
 		);
 		expect(emailLink).toBeTruthy();
-		expect(emailLink?.textContent).toBe("hello@example.com");
+		expect(emailLink?.textContent).toBe("mhborthwick@proton.me");
 	});
 
 	it("should have navigation with proper aria-label", () => {
