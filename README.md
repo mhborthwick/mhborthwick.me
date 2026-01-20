@@ -1,6 +1,6 @@
 # mhborthwick.me
 
-> Personal website built with Astro and React.
+> My personal site
 
 ## Requirements
 
