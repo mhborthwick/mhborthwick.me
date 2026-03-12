@@ -11,23 +11,25 @@
 
 export default function Header() {
 	return (
-		<header className="flex justify-center px-4">
-			<div className="max-w-[37.5rem] w-full px-4 my-12 mx-auto">
-				<h1 className="text-3xl sm:text-3xl font-bold text-gray-800 m-0 mb-2 leading-tight">
-					Mike Borthwick
-				</h1>
-
-				<p className="m-0 mb-6 text-sm">
-					<a
-						href="mailto:mhborthwick@proton.me"
-						className="text-gray-800 no-underline font-normal transition-colors duration-200 hover:text-blue-500 focus:outline focus:outline-2 focus:outline-blue-500 focus:outline-offset-2 focus:rounded-sm"
-					>
-						mhborthwick@proton.me
-					</a>
-				</p>
-
-				<nav aria-label="Connect with me" className="mt-6">
-					<ul className="list-none p-0 m-0 flex flex-col gap-0">
+		<header className="flex justify-center px-2">
+			<div className="w-full p-2 mx-auto">
+				<nav aria-label="Connect with me">
+					<ul className="list-none p-0 m-0 flex gap-2 items-baseline">
+						<li>
+							<h1 className="flex items-center py-0.5 text-sm text-gray-800 font-medium m-0 min-h-[32px] leading-none">
+								Mike Borthwick
+							</h1>
+						</li>
+						<li>
+							<a
+								href="mailto:mhborthwick@proton.me"
+								className="flex items-center py-0.5 text-sm text-gray-800 no-underline font-medium transition-all duration-200 min-h-[32px] hover:text-blue-500 focus:outline focus:outline-2 focus:outline-blue-500 focus:outline-offset-2"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Contact
+							</a>
+						</li>
 						<li>
 							<a
 								href="https://drive.proton.me/urls/5JBG6H02DG#7I8xieHXQkzS"
@@ -35,7 +37,7 @@ export default function Header() {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								Resume ↗
+								Resume
 							</a>
 						</li>
 						<li>
@@ -45,7 +47,7 @@ export default function Header() {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								LinkedIn ↗
+								LinkedIn
 							</a>
 						</li>
 						<li>
@@ -55,7 +57,7 @@ export default function Header() {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								GitHub ↗
+								GitHub
 							</a>
 						</li>
 					</ul>
